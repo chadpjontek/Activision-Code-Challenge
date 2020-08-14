@@ -63,6 +63,7 @@ body {
   text-align: center;
   color: #fbfcfc;
   letter-spacing: 2px;
+  width: 720px;
 }
 
 /* btn */
@@ -153,5 +154,10 @@ body {
 @media screen and (max-width: 800px) {
   .modal-content {
     width: 100%;
+  }
+
+  .hero-content {
+    margin-top: 35vh;
+    width: 80%; 
   }
 }
