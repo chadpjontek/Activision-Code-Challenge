@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activision code challenge</title>
+  <meta name="description" content="An Activision code challenge." />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <main class="container">
+    <picture class="hero-img">
+      <source media="(max-width: 799px)" srcset="Hero_img_mobile_01.jpg">
+      <source media="(min-width: 800px)" srcset="hero_img_01.jpg">
+      <img src="hero_img_01.jpg" alt="A photograph of the Activision brand on the front of a building.">
+    </picture>
+    <div class="hero-container">
+      <p class="hero-content">The world's first independent developer and distributor of <br>
+        video console games &amp; one
+        of
+        the largest third party<br>
+        video game publishers in the world.</p>
+      <button id="btn" class="btn"><b>LEARN MORE</b></button>
+    </div>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xvjn6BopsV8" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+</body>
+
+</html>

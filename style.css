@@ -1,0 +1,119 @@
+/* general */
+body {
+  background: #000;
+  font-family: 'Work Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+/* hero */
+
+.hero-img {
+  width: 100%;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.hero-img img{
+  width: 100%;
+}
+
+.hero-container {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.hero-content {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  text-align: center;
+  color: #fbfcfc;
+  letter-spacing: 2px;
+}
+
+/* btn */
+.btn {
+  color: #393d46;
+  background: linear-gradient(to bottom, #bbbbbb, #e2e2e2);
+  border: 1px solid #f7f7f6;
+  letter-spacing: 2px;
+  height: 60px;
+  width:  200px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  transition: all .2s;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  transition: box-shadow 0.2s ease-out, background-color 0.2s ease-out, transform 0.2s ease-out;
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 0;
+  padding-top: 0;
+  border-radius: 100%;
+  background-color: #e3e3e398;
+  transform: translate(-50%, -50%);
+}
+
+.btn:active:before {
+  width: 120%;
+  padding-top: 120%;
+  transition: width 0.2s ease-out, padding-top 0.2s ease-out;
+}
+
+.btn:hover {
+  box-shadow: 0 0 6px 2px rgb(255, 255, 255);
+}
+
+/* modal */
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  background-color: #fefefe;
+  margin: 20px auto;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.modal-content iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* media queries */
+@media screen and (max-width: 800px) {
+  .modal-content {
+    width: 100%;
+  }
+}
