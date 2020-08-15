@@ -5,10 +5,12 @@
 * Browsers: last 4 version
 */
 
+/* imports */
+@font-face { font-family: "Ramabhadra"; src: url("Ramabhadra-Regular.ttf"); }
+
 /* general */
 body {
   background: #000;
-  font-family: 'Work Sans', sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -73,10 +75,10 @@ body {
   background: -o-linear-gradient(top, #bbbbbb, #e2e2e2);
   background: linear-gradient(to bottom, #bbbbbb, #e2e2e2);
   border: 1px solid #f7f7f6;
-  letter-spacing: 2px;
+  /* letter-spacing: 2px; */
   height: 60px;
   width:  200px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Ramabhadra', sans-serif;
   font-size: 20px;
   -webkit-transition: all .2s;
   -o-transition: all .2s;
