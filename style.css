@@ -152,12 +152,29 @@ body {
   height: 100%;
 }
 
-/* media queries */
-@media screen and (max-width: 800px) {
-  .modal-content {
-    width: 100%;
-  }
+.close {
+  z-index: 2;
+  color: #aaa;
+  font-size: 48px;
+  font-weight: bold;
+  position: absolute;
+  right: 8%;
+}
 
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* media queries */
+@media screen and (max-width: 1230px) {
+  .close {
+    right: 1%;
+  }
+}
+@media screen and (max-width: 800px) {
   .hero-content {
     margin-top: 35vh;
     width: 80%; 
