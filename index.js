@@ -1,6 +1,7 @@
 window.onload = function() {
   const modal = document.getElementById("modal");
   const btn = document.getElementById("btn");
+  const close = document.getElementById("close");
   btn.onclick = function() {
     modal.style.display = "block";
   }
@@ -9,7 +10,7 @@ window.onload = function() {
       modal.style.display = "none";
     }
   }
-  span.onclick = function() {
+  close.onclick = function() {
     modal.style.display = "none";
   }
 }
